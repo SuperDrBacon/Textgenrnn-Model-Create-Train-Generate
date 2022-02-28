@@ -21,7 +21,7 @@ train_cfg = {
     'is_csv': False   # set to True if file is a CSV exported from Excel/BigQuery/pandas
 }
 
-input_file = "PATH_TO_FILE" # File with text to train on
+input_file = "PATH_TO_FILE.txt" # File with text to train on
 
 model_name = 'MODEL_NAME'   # change to set file name of resulting trained models/texts
 vocab_path = os.path.dirname(os.path.realpath(__file__))+model_name+"_vocab.json"
@@ -30,7 +30,7 @@ weights_path = os.path.dirname(os.path.realpath(__file__))+model_name+"_weights.
 
 dim_embeddings = 200
 batch_size = 100    # Increase if possible, Decrease if crash :)
-max_gen_length = 50
+max_gen_length = 50    # Max generated length in training
 
 if not path.exists(weights_path):
     print('There is no model present.')
