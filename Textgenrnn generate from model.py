@@ -11,7 +11,7 @@ weights_path = os.path.dirname(os.path.realpath(__file__))+model_name+"_weights.
 temperature = 5    # temperature to generate messages with. Higher temp creates more extravagant generation
 prefix = ''    # Prefix for the model to complete 
 n = 1   # Number of sentences to generate
-max_gen_length = 200    # The length of the sentences to generate 
+max_gen_length = 200    # The length of the sentences to generate
 
 textgen = textgenrnn(config_path=config_path, 
                     weights_path=weights_path,
